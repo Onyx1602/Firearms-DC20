@@ -1,0 +1,59 @@
+{
+  "id": "firearms-dc20",
+  "title": "Firearms DC20",
+  "version": "0.5",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "description": "<p>Bang Boom Pow. Firearms are here for DC20. This Module adds Firearm Weapon Properties to DC20.</p>",
+  "authors": [
+    {
+      "name": "OnyxStudios",
+      "email": "Onyx1602YT@gmail.com",
+      "url": "https://patreon.com/OnyxStudios",
+      "discord": "Onyx1602#8924",
+      "flags": {}
+    }
+  ],
+  "url": "https://patreon.com/OnyxStudios",
+  "flags": {
+    "canUpload": true
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dc20rpg",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "scripts": [
+    "scripts/firearm-config.js"
+  ],
+  "packs": [
+    {
+      "name": "firearm-properties",
+      "label": "Firearm Properties",
+      "path": "packs/firearm-properties",
+      "type": "JournalEntry",
+      "system": "dc20rpg",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "firearm-examples",
+      "label": "Firearm Examples",
+      "path": "packs/firearm-examples",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dc20rpg"
+    }
+  ]
+}
